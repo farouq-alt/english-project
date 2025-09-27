@@ -1,4 +1,3 @@
-
 [gd_scene load_steps=13 format=3 uid="uid://dryk7odxunit7"]
 
 [ext_resource type="Texture2D" uid="uid://b8gjju4371a2n" path="res://Assets/Card/CardV3.png" id="1_vycfi"]
@@ -27,7 +26,6 @@ texture = ExtResource("5_lpvhm")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vfhrl"]
 texture = ExtResource("5_lpvhm")
-
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(438, 648)
