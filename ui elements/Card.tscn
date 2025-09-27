@@ -1,9 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://blsj24mqwb3uh"]
+[gd_scene load_steps=13 format=3 uid="uid://blsj24mqwb3uh"]
 
 [ext_resource type="Texture2D" uid="uid://co0cgvpxa4sc" path="res://Assets/Card/Card2.png" id="1_bying"]
+[ext_resource type="Texture2D" uid="uid://577861u7saiv" path="res://Assets/Buttons/No.png" id="2_vycfi"]
+[ext_resource type="Texture2D" uid="uid://6rc1fiocj03i" path="res://Assets/Buttons/No_Hover.png" id="3_8ej6a"]
+[ext_resource type="Texture2D" uid="uid://dwohhrqs3t0mm" path="res://Assets/Buttons/Yes.png" id="4_t4gn0"]
+[ext_resource type="Texture2D" uid="uid://dd2tbdyyvaw05" path="res://Assets/Buttons/Yes_Hover.png" id="5_kbwnf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vh880"]
 texture = ExtResource("1_bying")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lpvhm"]
+texture = ExtResource("2_vycfi")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tgsa1"]
+texture = ExtResource("3_8ej6a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_87xjf"]
+texture = ExtResource("3_8ej6a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yle5d"]
+texture = ExtResource("4_t4gn0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbydr"]
+texture = ExtResource("5_kbwnf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vfhrl"]
+texture = ExtResource("5_kbwnf")
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(438, 566)
@@ -24,3 +46,48 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_vh880")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 429.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 2
+
+[node name="Control" type="Control" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer/Control"]
+custom_minimum_size = Vector2(28.8, 32.2)
+layout_mode = 0
+offset_left = 92.0
+offset_right = 120.8
+offset_bottom = 32.2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_lpvhm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_tgsa1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_87xjf")
+
+[node name="Control2" type="Control" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer/HBoxContainer/Control2"]
+custom_minimum_size = Vector2(28.8, 32.2)
+layout_mode = 0
+offset_left = -119.0
+offset_right = -90.2
+offset_bottom = 32.2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_yle5d")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cbydr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vfhrl")
