@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6rc1fiocj03i"
-path="res://.godot/imported/No_Hover.png-72a89248143e8c28effe6291a4972cde.ctex"
+uid="uid://c5ckdovw8v1xs"
+path="res://.godot/imported/arrow 2.png-683cc05a466d1189bdaa9d5c176ae2ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Buttons/No_Hover.png"
-dest_files=["res://.godot/imported/No_Hover.png-72a89248143e8c28effe6291a4972cde.ctex"]
+source_file="res://Assets/Buttons/New/arrow 2.png"
+dest_files=["res://.godot/imported/arrow 2.png-683cc05a466d1189bdaa9d5c176ae2ac.ctex"]
 
 [params]
 

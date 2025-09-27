@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbh2blgxqa62u"]
 
-[ext_resource type="Texture2D" uid="uid://c6ep4d1foy62c" path="res://Assets/gb.png" id="1_jvj8g"]
-[ext_resource type="PackedScene" uid="uid://blsj24mqwb3uh" path="res://ui elements/Card.tscn" id="2_cbqii"]
+[gd_scene load_steps=3 format=3 uid="uid://dxf00dvjd4du6"]
+
+[ext_resource type="Texture2D" uid="uid://de8mu5meog88" path="res://Assets/wall.png" id="1_cbqii"]
+[ext_resource type="PackedScene" uid="uid://dryk7odxunit7" path="res://ui elements/Card.tscn" id="2_cbqii"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -18,8 +19,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_jvj8g")
+texture = ExtResource("1_cbqii")
 expand_mode = 2
+stretch_mode = 1
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1

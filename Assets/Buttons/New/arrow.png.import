@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd2tbdyyvaw05"
-path="res://.godot/imported/Yes_Hover.png-774da94af966c563d094b5d19f8ce6f4.ctex"
+uid="uid://d2vyx3e687fgr"
+path="res://.godot/imported/arrow.png-8e1debfb9c3f4bf65aa63e25957279f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Buttons/Yes_Hover.png"
-dest_files=["res://.godot/imported/Yes_Hover.png-774da94af966c563d094b5d19f8ce6f4.ctex"]
+source_file="res://Assets/Buttons/New/arrow.png"
+dest_files=["res://.godot/imported/arrow.png-8e1debfb9c3f4bf65aa63e25957279f0.ctex"]
 
 [params]
 
