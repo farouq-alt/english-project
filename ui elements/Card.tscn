@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://blsj24mqwb3uh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4fkt"]
@@ -7,6 +8,10 @@ bg_color = Color(0.66752076, 0.56353396, 0.5745064, 1)
 =======
 [gd_scene load_steps=13 format=3 uid="uid://3p1p6fvho5gr"]
 
+=======
+[gd_scene load_steps=13 format=3 uid="uid://3p1p6fvho5gr"]
+
+>>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://b8gjju4371a2n" path="res://Assets/Card/CardV3.png" id="1_vycfi"]
 [ext_resource type="Texture2D" uid="uid://577861u7saiv" path="res://Assets/Buttons/No.png" id="2_vycfi"]
 [ext_resource type="Texture2D" uid="uid://6rc1fiocj03i" path="res://Assets/Buttons/No_Hover.png" id="3_8ej6a"]
