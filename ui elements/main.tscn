@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbh2blgxqa62u"]
 
-[ext_resource type="PackedScene" uid="uid://blsj24mqwb3uh" path="res://ui elements/Card.tscn" id="1_jvj8g"]
+[ext_resource type="Texture2D" uid="uid://c6ep4d1foy62c" path="res://Assets/gb.png" id="1_jvj8g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dm0k"]
 bg_color = Color(0.6405393, 0.5805765, 0.61733764, 1)
@@ -29,6 +29,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_jvj8g")
+expand_mode = 2
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -90,5 +92,15 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Control" parent="mainfocus/Panel/VBoxContainer/CenterContainer" instance=ExtResource("1_jvj8g")]
+[node name="Control" parent="mainfocus/Panel/VBoxContainer/CenterContainer"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 layout_mode = 2
+script = null
