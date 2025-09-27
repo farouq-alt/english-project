@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc6kcgr5s5ikd"
-path="res://.godot/imported/skull asset.png-09e45134b6b9334162ee209830f257d7.ctex"
+uid="uid://uq8d37jklquw"
+path="res://.godot/imported/skull spritesheet.png-91916b2eee83c165f20ceab0dcfa5584.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/skull gif/skull asset.png"
-dest_files=["res://.godot/imported/skull asset.png-09e45134b6b9334162ee209830f257d7.ctex"]
+source_file="res://Assets/skull gif/skull spritesheet.png"
+dest_files=["res://.godot/imported/skull spritesheet.png-91916b2eee83c165f20ceab0dcfa5584.ctex"]
 
 [params]
 
