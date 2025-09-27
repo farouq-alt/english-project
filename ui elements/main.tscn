@@ -1,19 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbh2blgxqa62u"]
+[gd_scene load_steps=3 format=3 uid="uid://dxf00dvjd4du6"]
 
-[ext_resource type="Texture2D" uid="uid://bn6jget5a1g2u" path="res://Assets/bg.png" id="1_cbqii"]
-[ext_resource type="PackedScene" uid="uid://3p1p6fvho5gr" path="res://ui elements/Card.tscn" id="1_jvj8g"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dm0k"]
-bg_color = Color(0.6405393, 0.5805765, 0.61733764, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig7tw"]
-bg_color = Color(0.7097733, 0.5712021, 0.43376088, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
+[ext_resource type="Texture2D" uid="uid://de8mu5meog88" path="res://Assets/wall.png" id="1_cbqii"]
+[ext_resource type="PackedScene" uid="uid://dryk7odxunit7" path="res://ui elements/Card.tscn" id="2_cbqii"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -32,6 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_cbqii")
 expand_mode = 2
+stretch_mode = 1
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -44,54 +33,13 @@ offset_right = 220.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="mainfocus"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_7dm0k")
-
-[node name="TopBar" type="VBoxContainer" parent="mainfocus/Panel"]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 81.0
-grow_horizontal = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Panel" type="Panel" parent="mainfocus/Panel/TopBar"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_ig7tw")
-
-[node name="lastchoice" type="Label" parent="mainfocus/Panel/TopBar/Panel"]
-layout_mode = 0
-offset_top = 12.0
-offset_right = 438.0
-offset_bottom = 35.0
-size_flags_vertical = 0
-text = "test sda"
-
-[node name="situation" type="Label" parent="mainfocus/Panel/TopBar/Panel"]
-layout_mode = 0
-offset_top = 43.0
-offset_right = 438.0
-offset_bottom = 66.0
-size_flags_vertical = 0
-text = "situation"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="mainfocus/Panel"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -566.0
-grow_horizontal = 2
-grow_vertical = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="CenterContainer" type="CenterContainer" parent="mainfocus/Panel/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="mainfocus"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Control" parent="mainfocus/Panel/VBoxContainer/CenterContainer" instance=ExtResource("1_jvj8g")]
+[node name="CenterContainer" type="CenterContainer" parent="mainfocus/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" parent="mainfocus/VBoxContainer/CenterContainer" instance=ExtResource("2_cbqii")]
 layout_mode = 2
