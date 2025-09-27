@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://dbh2blgxqa62u"]
 
 [ext_resource type="Texture2D" uid="uid://c6ep4d1foy62c" path="res://Assets/gb.png" id="1_jvj8g"]
@@ -13,6 +14,12 @@ corner_radius_bottom_left = 20
 bg_color = Color(0.7097733, 0.5712021, 0.43376088, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
+=======
+[gd_scene load_steps=3 format=3 uid="uid://dbh2blgxqa62u"]
+
+[ext_resource type="Texture2D" uid="uid://de8mu5meog88" path="res://Assets/wall.png" id="1_cbqii"]
+[ext_resource type="PackedScene" uid="uid://3p1p6fvho5gr" path="res://ui elements/Card.tscn" id="1_jvj8g"]
+>>>>>>> Stashed changes
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -29,8 +36,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_jvj8g")
+texture = ExtResource("1_cbqii")
 expand_mode = 2
+stretch_mode = 1
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -43,13 +51,9 @@ offset_right = 220.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="mainfocus"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_7dm0k")
-
-[node name="TopBar" type="VBoxContainer" parent="mainfocus/Panel"]
+[node name="Control" parent="." instance=ExtResource("1_jvj8g")]
 layout_mode = 1
+<<<<<<< Updated upstream
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 81.0
@@ -104,3 +108,9 @@ auto_translate_mode = 0
 editor_description = ""
 layout_mode = 2
 script = null
+=======
+offset_left = 338.0
+offset_top = 36.0
+offset_right = -376.0
+offset_bottom = -46.0
+>>>>>>> Stashed changes
