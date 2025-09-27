@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dbh2blgxqa62u"]
+[gd_scene load_steps=5 format=3 uid="uid://dbh2blgxqa62u"]
 
+[ext_resource type="Texture2D" uid="uid://bn6jget5a1g2u" path="res://Assets/bg.png" id="1_cbqii"]
 [ext_resource type="PackedScene" uid="uid://3p1p6fvho5gr" path="res://ui elements/Card.tscn" id="1_jvj8g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dm0k"]
@@ -29,6 +30,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_cbqii")
+expand_mode = 2
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1
