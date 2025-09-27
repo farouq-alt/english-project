@@ -28,7 +28,7 @@ texture = ExtResource("5_kbwnf")
 texture = ExtResource("5_kbwnf")
 
 [node name="Control" type="Control"]
-custom_minimum_size = Vector2(438, 566)
+custom_minimum_size = Vector2(438, 648)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
