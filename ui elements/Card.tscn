@@ -1,15 +1,16 @@
-[gd_scene load_steps=49 format=3 uid="uid://dryk7odxunit7"]
+[gd_scene load_steps=50 format=3 uid="uid://dryk7odxunit7"]
 
-[ext_resource type="Texture2D" uid="uid://b8gjju4371a2n" path="res://Assets/Card/CardV3.png" id="1_vycfi"]
+[ext_resource type="Texture2D" uid="uid://ba72erv41w3m" path="res://Assets/Card/Cardt.png" id="1_kbwnf"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
 [ext_resource type="Texture2D" uid="uid://tlcodhr3a42e" path="res://Assets/filled_frame.png" id="2_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://dabvt08emqbns" path="res://Assets/Buttons/New/arrow_hover.png" id="3_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://3731tx3y47c4" path="res://Assets/Buttons/arrow 2.png" id="4_kbwnf"]
+[ext_resource type="Texture2D" uid="uid://xa3shbpjui50" path="res://Assets/Card/questionmark.png" id="5_kbwnf"]
 [ext_resource type="Texture2D" uid="uid://ces7mvcrjd444" path="res://Assets/Buttons/New/arrow_hover2.png" id="5_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://bovc08t5oriv" path="res://Assets/skull gif/finalskullspritesheet.png" id="6_8ej6a"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vh880"]
-texture = ExtResource("1_vycfi")
+texture = ExtResource("1_kbwnf")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lpvhm"]
 texture = ExtResource("2_8ej6a")
@@ -328,10 +329,33 @@ offset_bottom = 207.0
 expand_mode = 3
 stretch_mode = 4
 
+[node name="VSeparator" type="VSeparator" parent="Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator4" type="VSeparator" parent="Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator5" type="VSeparator" parent="Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 alignment = 2
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(28.8, 32.2)
@@ -342,6 +366,11 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_lpvhm")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_tgsa1")
 theme_override_styles/hover = SubResource("StyleBoxTexture_87xjf")
 
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("5_kbwnf")
+
 [node name="Button2" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(28.8, 32.2)
 layout_mode = 2
@@ -350,6 +379,23 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_yle5d")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_cbydr")
 theme_override_styles/hover = SubResource("StyleBoxTexture_vfhrl")
+
+[node name="HSeparator" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator3" type="VSeparator" parent="Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
 
 [node name="Control" type="Control" parent="Panel/VBoxContainer"]
 layout_mode = 2
