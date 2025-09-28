@@ -1,9 +1,8 @@
-[gd_scene load_steps=50 format=3 uid="uid://dryk7odxunit7"]
+[gd_scene load_steps=49 format=3 uid="uid://dryk7odxunit7"]
 
 [ext_resource type="Texture2D" uid="uid://b8gjju4371a2n" path="res://Assets/Card/CardV3.png" id="1_vycfi"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
-[ext_resource type="Texture2D" uid="uid://c0ce7hg3yw0e8" path="res://Assets/frame.png" id="2_kbwnf"]
-[ext_resource type="Texture2D" uid="uid://de8mu5meog88" path="res://Assets/wall.png" id="3_lpvhm"]
+[ext_resource type="Texture2D" uid="uid://tlcodhr3a42e" path="res://Assets/filled_frame.png" id="2_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://dabvt08emqbns" path="res://Assets/Buttons/New/arrow_hover.png" id="3_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://3731tx3y47c4" path="res://Assets/Buttons/arrow 2.png" id="4_kbwnf"]
 [ext_resource type="Texture2D" uid="uid://ces7mvcrjd444" path="res://Assets/Buttons/New/arrow_hover2.png" id="5_lpvhm"]
@@ -316,7 +315,7 @@ custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture = ExtResource("2_kbwnf")
+texture = ExtResource("2_t4gn0")
 expand_mode = 3
 stretch_mode = 4
 
@@ -326,7 +325,6 @@ offset_left = 30.0
 offset_top = 87.0
 offset_right = 276.0
 offset_bottom = 207.0
-texture = ExtResource("3_lpvhm")
 expand_mode = 3
 stretch_mode = 4
 
