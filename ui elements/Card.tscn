@@ -1,6 +1,7 @@
-[gd_scene load_steps=50 format=3 uid="uid://dryk7odxunit7"]
+[gd_scene load_steps=51 format=3 uid="uid://dryk7odxunit7"]
 
 [ext_resource type="Texture2D" uid="uid://ba72erv41w3m" path="res://Assets/Card/Cardt.png" id="1_kbwnf"]
+[ext_resource type="Script" uid="uid://57otohbndmvp" path="res://ui elements/card.gd" id="1_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
 [ext_resource type="Texture2D" uid="uid://tlcodhr3a42e" path="res://Assets/filled_frame.png" id="2_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://dabvt08emqbns" path="res://Assets/Buttons/New/arrow_hover.png" id="3_t4gn0"]
@@ -11,24 +12,6 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vh880"]
 texture = ExtResource("1_kbwnf")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lpvhm"]
-texture = ExtResource("2_8ej6a")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tgsa1"]
-texture = ExtResource("3_t4gn0")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_87xjf"]
-texture = ExtResource("3_t4gn0")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yle5d"]
-texture = ExtResource("4_kbwnf")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbydr"]
-texture = ExtResource("5_lpvhm")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vfhrl"]
-texture = ExtResource("5_lpvhm")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t4gn0"]
 atlas = ExtResource("6_8ej6a")
@@ -279,6 +262,24 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lpvhm"]
+texture = ExtResource("2_8ej6a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tgsa1"]
+texture = ExtResource("3_t4gn0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_87xjf"]
+texture = ExtResource("3_t4gn0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yle5d"]
+texture = ExtResource("4_kbwnf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbydr"]
+texture = ExtResource("5_lpvhm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vfhrl"]
+texture = ExtResource("5_lpvhm")
+
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(438, 648)
 layout_mode = 3
@@ -287,6 +288,7 @@ anchor_bottom = 1.0
 offset_right = 0.23995972
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_lpvhm")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -297,8 +299,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_vh880")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-custom_minimum_size = Vector2(438, 0)
+[node name="cardframe" type="VBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -306,11 +307,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer"]
+[node name="caseimgholder" type="VBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/VBoxContainer"]
+[node name="frame" type="TextureRect" parent="Panel/cardframe/caseimgholder"]
 clip_children = 2
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
@@ -320,7 +321,7 @@ texture = ExtResource("2_t4gn0")
 expand_mode = 3
 stretch_mode = 4
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/VBoxContainer/TextureRect"]
+[node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/frame"]
 layout_mode = 0
 offset_left = 30.0
 offset_top = 87.0
@@ -329,35 +330,55 @@ offset_bottom = 207.0
 expand_mode = 3
 stretch_mode = 4
 
-[node name="VSeparator" type="VSeparator" parent="Panel/VBoxContainer"]
+[node name="VSeparator" type="VSeparator" parent="Panel/cardframe"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 
-[node name="VSeparator4" type="VSeparator" parent="Panel/VBoxContainer"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
-[node name="VSeparator5" type="VSeparator" parent="Panel/VBoxContainer"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+[node name="casetextholder" type="HBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
 size_flags_vertical = 3
 alignment = 2
 
-[node name="HSeparator2" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="textholder" type="VBoxContainer" parent="Panel/cardframe/casetextholder"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="question" type="Label" parent="Panel/cardframe/casetextholder/textholder"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "WOULD YOU RATHER MEET HITLER OR YOUR TEACHER"
+
+[node name="Control" type="Control" parent="Panel/cardframe/casetextholder"]
+layout_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/cardframe/casetextholder/Control"]
+position = Vector2(-223, 67)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_mfuqh")
+animation = &"calm"
+autoplay = "calm"
+frame_progress = 0.5743564
+
+[node name="VSeparator4" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="buttoncontainer" type="HBoxContainer" parent="Panel/cardframe"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 2
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/cardframe/buttoncontainer"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="lbutton" type="Button" parent="Panel/cardframe/buttoncontainer"]
 custom_minimum_size = Vector2(28.8, 32.2)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -366,12 +387,12 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_lpvhm")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_tgsa1")
 theme_override_styles/hover = SubResource("StyleBoxTexture_87xjf")
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="misc" type="TextureRect" parent="Panel/cardframe/buttoncontainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("5_kbwnf")
 
-[node name="Button2" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="rbutton" type="Button" parent="Panel/cardframe/buttoncontainer"]
 custom_minimum_size = Vector2(28.8, 32.2)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -380,30 +401,19 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_yle5d")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_cbydr")
 theme_override_styles/hover = SubResource("StyleBoxTexture_vfhrl")
 
-[node name="HSeparator" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="Panel/cardframe/buttoncontainer"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VSeparator2" type="VSeparator" parent="Panel/VBoxContainer"]
+[node name="VSeparator2" type="VSeparator" parent="Panel/cardframe"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 
-[node name="VSeparator3" type="VSeparator" parent="Panel/VBoxContainer"]
+[node name="VSeparator3" type="VSeparator" parent="Panel/cardframe"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-
-[node name="Control" type="Control" parent="Panel/VBoxContainer"]
-layout_mode = 2
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/VBoxContainer/Control"]
-position = Vector2(216, -209)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_mfuqh")
-animation = &"calm"
-autoplay = "calm"
-frame_progress = 0.5743564
