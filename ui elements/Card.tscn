@@ -330,12 +330,6 @@ offset_bottom = 207.0
 expand_mode = 3
 stretch_mode = 4
 
-[node name="VSeparator" type="VSeparator" parent="Panel/cardframe"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
 [node name="casetextholder" type="HBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -346,16 +340,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="question" type="Label" parent="Panel/cardframe/casetextholder/textholder"]
+custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-text = "WOULD YOU RATHER MEET HITLER OR YOUR TEACHER"
+autowrap_mode = 2
 
 [node name="Control" type="Control" parent="Panel/cardframe/casetextholder"]
 layout_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/cardframe/casetextholder/Control"]
-position = Vector2(-223, 67)
+position = Vector2(-223, 102)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_mfuqh")
 animation = &"calm"
