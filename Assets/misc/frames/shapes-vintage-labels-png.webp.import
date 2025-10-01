@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6ep4d1foy62c"
-path="res://.godot/imported/gb.png-7229bad7a7115058b5308e509ec7ae66.ctex"
+uid="uid://k52p1ha2i0v8"
+path="res://.godot/imported/shapes-vintage-labels-png.webp-6de5bf1d742027e5ecadec5aaa6743a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gb.png"
-dest_files=["res://.godot/imported/gb.png-7229bad7a7115058b5308e509ec7ae66.ctex"]
+source_file="res://Assets/misc/frames/shapes-vintage-labels-png.webp"
+dest_files=["res://.godot/imported/shapes-vintage-labels-png.webp-6de5bf1d742027e5ecadec5aaa6743a0.ctex"]
 
 [params]
 

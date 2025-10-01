@@ -1,9 +1,9 @@
 [gd_scene load_steps=51 format=3 uid="uid://dryk7odxunit7"]
 
 [ext_resource type="Texture2D" uid="uid://ba72erv41w3m" path="res://Assets/Card/Cardt.png" id="1_kbwnf"]
-[ext_resource type="Script" path="res://ui elements/card.gd" id="1_lpvhm"]
+[ext_resource type="Script" uid="uid://57otohbndmvp" path="res://scripts/card.gd" id="1_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
-[ext_resource type="Texture2D" uid="uid://tlcodhr3a42e" path="res://Assets/filled_frame.png" id="2_t4gn0"]
+[ext_resource type="Texture2D" uid="uid://k52p1ha2i0v8" path="res://Assets/misc/frames/shapes-vintage-labels-png.webp" id="3_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://dabvt08emqbns" path="res://Assets/Buttons/New/arrow_hover.png" id="3_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://3731tx3y47c4" path="res://Assets/Buttons/arrow 2.png" id="4_kbwnf"]
 [ext_resource type="Texture2D" uid="uid://xa3shbpjui50" path="res://Assets/Card/questionmark.png" id="5_kbwnf"]
@@ -309,6 +309,16 @@ offset_right = -40.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="VSeparator4" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator5" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
 [node name="caseimgholder" type="VBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
 size_flags_vertical = 0
@@ -319,16 +329,16 @@ custom_minimum_size = Vector2(5, 300)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-texture = ExtResource("2_t4gn0")
+texture = ExtResource("3_lpvhm")
 expand_mode = 3
 stretch_mode = 4
 
 [node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/frame"]
 layout_mode = 0
-offset_left = 30.0
-offset_top = 87.0
+offset_left = 9.0
+offset_top = 19.0
 offset_right = 276.0
-offset_bottom = 207.0
+offset_bottom = 281.0
 expand_mode = 3
 stretch_mode = 4
 
