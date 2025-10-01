@@ -159,17 +159,22 @@ func _show_results() -> void:
 		print(final_text)
 
 func _generate_combo_name(stat1: String, stat2: String) -> String:
+	# Define combos for all possible two-stat combinations
 	var combos := {
-		["stinkiness","bravery"]: "Stinkingly Brave 💨⚔️",
-		["bravery","honesty"]: "Brutally Honest Hero 🎤📢",
-		["social","stinkiness"]: "Chatty Gas Cloud 🦋💨",
-		["politics","honesty"]: "Politically Honest 📢⚖️",
 		["social","bravery"]: "Party Legend 🎉⚔️",
-		["honesty","stinkiness"]: "Truthful Stinker 💨📢"
+		["social","politics"]: "Chatterbox Diplomat 🦋⚖️",
+		["social","stinkiness"]: "Chatty Gas Cloud 🦋💨",
+		["social","honesty"]: "Blunt Socializer 🦋📢",
+		["bravery","politics"]: "Fearless Debater ⚔️⚖️",
+		["bravery","stinkiness"]: "Stinkingly Brave 💨⚔️",
+		["bravery","honesty"]: "Brutally Honest Hero 🎤📢",
+		["politics","stinkiness"]: "Toxic Politician ⚖️💨",
+		["politics","honesty"]: "Politically Honest 📢⚖️",
+		["stinkiness","honesty"]: "Truthful Stinker 💨📢"
 	}
 
 	var key = [stat1, stat2]
-	key.sort()
+	key.sort()  # ensure order doesn't matter
 
 	for c in combos.keys():
 		var k = c.duplicate()
@@ -177,4 +182,5 @@ func _generate_combo_name(stat1: String, stat2: String) -> String:
 		if k == key:
 			return combos[c]
 
+	# fallback if something is missing
 	return "%s + %s" % [stat1.capitalize(), stat2.capitalize()]
