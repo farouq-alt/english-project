@@ -1,6 +1,6 @@
 [gd_scene load_steps=52 format=3 uid="uid://dryk7odxunit7"]
 
-[ext_resource type="Script" uid="uid://57otohbndmvp" path="res://scripts/card.gd" id="1_lpvhm"]
+[ext_resource type="Script" uid="uid://yvvrvuhrxtsq" path="res://ui elements/card.gd" id="1_tgsa1"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
 [ext_resource type="Texture2D" uid="uid://wklwxta7xbv2" path="res://Assets/Card/frame.png" id="2_tgsa1"]
 [ext_resource type="Texture2D" uid="uid://bi1x11yewvhxd" path="res://Assets/misc/frames/noanswer.png" id="3_87xjf"]
@@ -289,7 +289,7 @@ anchor_bottom = 1.0
 offset_right = 0.23995972
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_lpvhm")
+script = ExtResource("1_tgsa1")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -346,8 +346,8 @@ stretch_mode = 4
 
 [node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/noframe"]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 9.0
+offset_left = 1.0
+offset_top = 4.0
 offset_right = 176.0
 offset_bottom = 314.0
 expand_mode = 3
@@ -366,7 +366,7 @@ stretch_mode = 4
 [node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/yesframe"]
 layout_mode = 0
 offset_left = 4.0
-offset_top = 4.0
+offset_top = 3.0
 offset_right = 170.0
 offset_bottom = 314.0
 expand_mode = 3
