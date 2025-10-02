@@ -305,9 +305,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 49.0
+offset_left = 41.0
 offset_top = -11.0
-offset_right = -43.0
+offset_right = -35.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -331,11 +331,6 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="VSeparator8" type="VSeparator" parent="Panel/cardframe"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-
 [node name="caseimgholder" type="HBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
 
@@ -352,9 +347,9 @@ stretch_mode = 4
 [node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/noframe"]
 layout_mode = 0
 offset_left = 9.0
-offset_top = 19.0
-offset_right = 276.0
-offset_bottom = 281.0
+offset_top = 9.0
+offset_right = 176.0
+offset_bottom = 314.0
 expand_mode = 3
 stretch_mode = 4
 
@@ -370,12 +365,52 @@ stretch_mode = 4
 
 [node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/yesframe"]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 19.0
-offset_right = 276.0
-offset_bottom = 281.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 170.0
+offset_bottom = 314.0
 expand_mode = 3
 stretch_mode = 4
+
+[node name="VSeparator8" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator9" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator10" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator11" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator12" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator13" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator14" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator15" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="casetextholder" type="HBoxContainer" parent="Panel/cardframe"]
 layout_mode = 2
@@ -399,7 +434,7 @@ autowrap_mode = 2
 layout_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/cardframe/casetextholder/Control"]
-position = Vector2(-181, 22)
+position = Vector2(-181, -27)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_mfuqh")
 animation = &"calm"
@@ -413,24 +448,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="VSeparator4" type="VSeparator" parent="Panel/cardframe2"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
-[node name="VSeparator5" type="VSeparator" parent="Panel/cardframe2"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
-[node name="VSeparator6" type="VSeparator" parent="Panel/cardframe2"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
 
 [node name="VSeparator7" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
@@ -456,13 +473,49 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 
-[node name="VSeparator9" type="VSeparator" parent="Panel/cardframe2"]
+[node name="VSeparator13" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 
-[node name="VSeparator10" type="VSeparator" parent="Panel/cardframe2"]
+[node name="VSeparator17" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator19" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator20" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator24" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator25" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator26" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator27" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -506,9 +559,14 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VSeparator3" type="VSeparator" parent="Panel/cardframe2"]
+[node name="VSeparator21" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(1, 10)
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
+
+[node name="VSeparator22" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="VSeparator23" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2

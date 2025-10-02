@@ -1,0 +1,11 @@
+[gd_resource type="AnimatedTexture" load_steps=3 format=3 uid="uid://dcnrbiqbg073g"]
+
+[ext_resource type="Texture2D" uid="uid://doyay5o0uffca" path="res://Assets/yesnoquestions/noanswersphotos/yesid2/Sprite-0002.png" id="1_ifmln"]
+[ext_resource type="Texture2D" uid="uid://bas1osappwpfl" path="res://Assets/yesnoquestions/noanswersphotos/yesid2/Sprite-0003.png" id="2_xliyu"]
+
+[resource]
+frames = 2
+frame_0/texture = ExtResource("1_ifmln")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("2_xliyu")
+frame_1/duration = 0.1

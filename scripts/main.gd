@@ -32,41 +32,137 @@ func _ready() -> void:
 
 	# Full set of funny/edgy questions
 	questions = [
-		# --- Social ---
-		{"id":1, "question":"Do you start chatting with random people just for fun?", "image":"res://Assets/imagetoquestion/social1.jpg", "stat":"social", "yes_value":3, "no_value":-2},
-		{"id":2, "question":"Would you rather stay quiet all day than join a group of new people?", "image":"res://Assets/imagetoquestion/social2.jpg", "stat":"social", "yes_value":-3, "no_value":2},
-		{"id":3, "question":"Would you volunteer to introduce yourself first in class, even if embarrassed?", "image":"res://Assets/imagetoquestion/social3.jpg", "stat":"social", "yes_value":3, "no_value":-2},
-		{"id":4, "question":"If you meet your teacher outside the class would you say Hi", "image":"res://Assets/imagetoquestion/social4.jpg", "stat":"social", "yes_value":4, "no_value":-2},
-		{"id":5, "question":"If left alone at a party, would you start talking to strangers?", "image":"res://Assets/imagetoquestion/social5.jpg", "stat":"social", "yes_value":5, "no_value":-3},
+	# --- Social ---
+	{"id":1, "question":"Do you start chatting with random people just for fun?", 
+	 "image_yes":"res://Assets/animations-for-buttons/id1/yesanim.tres", 
+	 "image_no":"res://Assets/animations-for-buttons/id1/noanim.tres", 
+	 "stat":"social", "yes_value":3, "no_value":-2},
 
-		# --- Bravery ---
-		{"id":6, "question":"Would you sing karaoke in front of your whole class if dared?", "image":"res://Assets/imagetoquestion/bravery1.jpg", "stat":"bravery", "yes_value":4, "no_value":-3},
-		{"id":7, "question":"If someone insults your favorite team, would you argue back loudly?", "image":"res://Assets/imagetoquestion/bravery2.jpg", "stat":"bravery", "yes_value":3, "no_value":-2},
-		{"id":8, "question":"Would you eat the spiciest pepper a friend dares you to?", "image":"res://Assets/imagetoquestion/bravery3.jpg", "stat":"bravery", "yes_value":4, "no_value":-2},
-		{"id":9, "question":"If a stray dog barks at you, would you bark back or run away?", "image":"res://Assets/imagetoquestion/bravery4.jpg", "stat":"bravery", "yes_value":3, "no_value":-1},
-		{"id":10, "question":"Would you laugh in a psycho's face just to see them lose it?", "image":"res://Assets/imagetoquestion/bravery5.jpg", "stat":"bravery", "yes_value":5, "no_value":-3},
+	{"id":2, "question":"Would you rather stay quiet all day than join a group of new people?", 
+	 "image_yes": "res://Assets/animations-for-buttons/id2/yesanim.tres",
+	 "image_no":"res://Assets/animations-for-buttons/id2/noanim.tres",
+	 "stat":"social", "yes_value":-3, "no_value":2},
 
-		# --- Politics ---
-		{"id":11, "question":"Do you have wierd unpopular political opinion?", "image":"res://Assets/imagetoquestion/politics1.jpg", "stat":"politics", "yes_value":5, "no_value":-2},
-		{"id":12, "question":"Would you share an unpopular political opinion in front of everyone?", "image":"res://Assets/imagetoquestion/politics2.jpg", "stat":"politics", "yes_value":5, "no_value":-4},
-		{"id":13, "question":"Do you post memes just to provoke your friends?", "image":"res://Assets/imagetoquestion/politics3.jpg", "stat":"politics", "yes_value":4, "no_value":-2},
-		{"id":14, "question":"Do you enjoy saying the N word?", "image":"res://Assets/imagetoquestion/politics4.jpg", "stat":"politics", "yes_value":3, "no_value":-2},
-		{"id":15, "question":"Do you think yelling wins debates more than logic?", "image":"res://Assets/imagetoquestion/politics5.jpg", "stat":"politics", "yes_value":2, "no_value":-3},
+	{"id":3, "question":"Would you volunteer to introduce yourself first in class, even if embarrassed?", 
+	 "image_yes":"res://Assets/imagetoquestion/social3_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/social3_no.jpg", 
+	 "stat":"social", "yes_value":3, "no_value":-2},
 
-		# --- Stinkiness ---
-		{"id":16, "question":"Would you eat a plate of beans and eggs before class, knowing you'll sit for hours?", "image":"res://Assets/imagetoquestion/stink1.jpg", "stat":"stinkiness", "yes_value":4, "no_value":0},
-		{"id":17, "question":"Would you eat a smelly sardine sandwich in a crowded room?", "image":"res://Assets/imagetoquestion/stink2.jpg", "stat":"stinkiness", "yes_value":3, "no_value":0},
-		{"id":18, "question":"Do you sometimes skip deodorant on hot days?", "image":"res://Assets/imagetoquestion/stink3.jpg", "stat":"stinkiness", "yes_value":2, "no_value":-1},
-		{"id":19, "question":"Have you ever laughed at your own burps or farts secretly?", "image":"res://Assets/imagetoquestion/stink4.jpg", "stat":"stinkiness", "yes_value":4, "no_value":0},
-		{"id":20, "question":"Would you lend your smelly shoes to a friend if they asked?", "image":"res://Assets/imagetoquestion/stink5.jpg", "stat":"stinkiness", "yes_value":3, "no_value":-2},
+	{"id":4, "question":"If you meet your teacher outside the class would you say Hi", 
+	 "image_yes":"res://Assets/imagetoquestion/social4_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/social4_no.jpg", 
+	 "stat":"social", "yes_value":4, "no_value":-2},
 
-		# --- Honesty ---
-		{"id":21, "question":"If you fart by accident, would you admit it or blame the chair?", "image":"res://Assets/imagetoquestion/honesty1.jpg", "stat":"honesty", "yes_value":3, "no_value":-3},
-		{"id":22, "question":"If you ate the last cookie and nobody saw, would you admit it?", "image":"res://Assets/imagetoquestion/honesty2.jpg", "stat":"honesty", "yes_value":4, "no_value":-2},
-		{"id":23, "question":"Would you admit breaking a vase, or just let your sibling take the blame?", "image":"res://Assets/imagetoquestion/honesty3.jpg", "stat":"honesty", "yes_value":3, "no_value":-3},
-		{"id":24, "question":"Have you ever pretended to be sick just to skip class?", "image":"res://Assets/imagetoquestion/honesty4.jpg", "stat":"honesty", "yes_value":-2, "no_value":3},
-		{"id":25, "question":"If you spilled juice on your homework, would you confess or say the dog did it?", "image":"res://Assets/imagetoquestion/honesty5.jpg", "stat":"honesty", "yes_value":2, "no_value":-3},
-	]
+	{"id":5, "question":"If left alone at a party, would you start talking to strangers?", 
+	 "image_yes":"res://Assets/imagetoquestion/social5_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/social5_no.jpg", 
+	 "stat":"social", "yes_value":5, "no_value":-3},
+
+	# --- Bravery ---
+	{"id":6, "question":"Would you sing karaoke in front of your whole class if dared?", 
+	 "image_yes":"res://Assets/imagetoquestion/bravery1_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/bravery1_no.jpg", 
+	 "stat":"bravery", "yes_value":4, "no_value":-3},
+
+	{"id":7, "question":"If someone insults your favorite team, would you argue back loudly?", 
+	 "image_yes":"res://Assets/imagetoquestion/bravery2_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/bravery2_no.jpg", 
+	 "stat":"bravery", "yes_value":3, "no_value":-2},
+
+	{"id":8, "question":"Would you eat the spiciest pepper a friend dares you to?", 
+	 "image_yes":"res://Assets/imagetoquestion/bravery3_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/bravery3_no.jpg", 
+	 "stat":"bravery", "yes_value":4, "no_value":-2},
+
+	{"id":9, "question":"If a stray dog barks at you, would you bark back or run away?", 
+	 "image_yes":"res://Assets/imagetoquestion/bravery4_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/bravery4_no.jpg", 
+	 "stat":"bravery", "yes_value":3, "no_value":-1},
+
+	{"id":10, "question":"Would you laugh in a psycho's face just to see them lose it?", 
+	 "image_yes":"res://Assets/imagetoquestion/bravery5_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/bravery5_no.jpg", 
+	 "stat":"bravery", "yes_value":5, "no_value":-3},
+
+	# --- Politics ---
+	{"id":11, "question":"Do you have wierd unpopular political opinion?", 
+	 "image_yes":"res://Assets/imagetoquestion/politics1_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/politics1_no.jpg", 
+	 "stat":"politics", "yes_value":5, "no_value":-2},
+
+	{"id":12, "question":"Would you share an unpopular political opinion in front of everyone?", 
+	 "image_yes":"res://Assets/imagetoquestion/politics2_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/politics2_no.jpg", 
+	 "stat":"politics", "yes_value":5, "no_value":-4},
+
+	{"id":13, "question":"Do you post memes just to provoke your friends?", 
+	 "image_yes":"res://Assets/imagetoquestion/politics3_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/politics3_no.jpg", 
+	 "stat":"politics", "yes_value":4, "no_value":-2},
+
+	{"id":14, "question":"Do you enjoy saying the N word?", 
+	 "image_yes":"res://Assets/imagetoquestion/politics4_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/politics4_no.jpg", 
+	 "stat":"politics", "yes_value":3, "no_value":-2},
+
+	{"id":15, "question":"Do you think yelling wins debates more than logic?", 
+	 "image_yes":"res://Assets/imagetoquestion/politics5_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/politics5_no.jpg", 
+	 "stat":"politics", "yes_value":2, "no_value":-3},
+
+	# --- Stinkiness ---
+	{"id":16, "question":"Would you eat a plate of beans and eggs before class, knowing you'll sit for hours?", 
+	 "image_yes":"res://Assets/imagetoquestion/stink1_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/stink1_no.jpg", 
+	 "stat":"stinkiness", "yes_value":4, "no_value":0},
+
+	{"id":17, "question":"Would you eat a smelly sardine sandwich in a crowded room?", 
+	 "image_yes":"res://Assets/imagetoquestion/stink2_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/stink2_no.jpg", 
+	 "stat":"stinkiness", "yes_value":3, "no_value":0},
+
+	{"id":18, "question":"Do you sometimes skip deodorant on hot days?", 
+	 "image_yes":"res://Assets/imagetoquestion/stink3_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/stink3_no.jpg", 
+	 "stat":"stinkiness", "yes_value":2, "no_value":-1},
+
+	{"id":19, "question":"Have you ever laughed at your own burps or farts secretly?", 
+	 "image_yes":"res://Assets/imagetoquestion/stink4_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/stink4_no.jpg", 
+	 "stat":"stinkiness", "yes_value":4, "no_value":0},
+
+	{"id":20, "question":"Would you lend your smelly shoes to a friend if they asked?", 
+	 "image_yes":"res://Assets/imagetoquestion/stink5_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/stink5_no.jpg", 
+	 "stat":"stinkiness", "yes_value":3, "no_value":-2},
+
+	# --- Honesty ---
+	{"id":21, "question":"If you fart by accident, would you admit it or blame the chair?", 
+	 "image_yes":"res://Assets/imagetoquestion/honesty1_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/honesty1_no.jpg", 
+	 "stat":"honesty", "yes_value":3, "no_value":-3},
+
+	{"id":22, "question":"If you ate the last cookie and nobody saw, would you admit it?", 
+	 "image_yes":"res://Assets/imagetoquestion/honesty2_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/honesty2_no.jpg", 
+	 "stat":"honesty", "yes_value":4, "no_value":-2},
+
+	{"id":23, "question":"Would you admit breaking a vase, or just let your sibling take the blame?", 
+	 "image_yes":"res://Assets/imagetoquestion/honesty3_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/honesty3_no.jpg", 
+	 "stat":"honesty", "yes_value":3, "no_value":-3},
+
+	{"id":24, "question":"Have you ever pretended to be sick just to skip class?", 
+	 "image_yes":"res://Assets/imagetoquestion/honesty4_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/honesty4_no.jpg", 
+	 "stat":"honesty", "yes_value":-2, "no_value":3},
+
+	{"id":25, "question":"If you spilled juice on your homework, would you confess or say the dog did it?", 
+	 "image_yes":"res://Assets/imagetoquestion/honesty5_yes.jpg", 
+	 "image_no":"res://Assets/imagetoquestion/honesty5_no.jpg", 
+	 "stat":"honesty", "yes_value":2, "no_value":-3},
+]
+
 
 	q_index = 0
 	stat_scores.clear()
