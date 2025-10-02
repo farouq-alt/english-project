@@ -399,8 +399,8 @@ autowrap_mode = 2
 layout_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/cardframe/casetextholder/Control"]
-position = Vector2(-179, 153)
-scale = Vector2(4, 4)
+position = Vector2(-181, 22)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_mfuqh")
 animation = &"calm"
 autoplay = "calm"
@@ -433,6 +433,18 @@ size_flags_horizontal = 4
 size_flags_vertical = 3
 
 [node name="VSeparator7" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator11" type="VSeparator" parent="Panel/cardframe2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VSeparator12" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -496,6 +508,7 @@ size_flags_horizontal = 3
 
 [node name="VSeparator3" type="VSeparator" parent="Panel/cardframe2"]
 modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(1, 10)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
