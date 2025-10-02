@@ -1,17 +1,7 @@
-[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://bu7hk56a22d61"]
+[gd_resource type="AnimatedTexture" load_steps=2 format=3 uid="uid://bu7hk56a22d61"]
 
-[ext_resource type="Texture2D" uid="uid://bp0015dvodu7k" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0001.png" id="1_cquph"]
-[ext_resource type="Texture2D" uid="uid://cee2e4rhvsmtg" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0002.png" id="2_5bof0"]
-[ext_resource type="Texture2D" uid="uid://b2we55u3sbars" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0003.png" id="3_uxn5u"]
-[ext_resource type="Texture2D" uid="uid://bpmhop1yrhpd0" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0004.png" id="4_jal8m"]
+[ext_resource type="Texture2D" uid="uid://cfaptitt548tb" path="res://Assets/yesnoquestions/noanswersphotos/yes.png" id="1_76cet"]
 
 [resource]
-frames = 4
-frame_0/texture = ExtResource("1_cquph")
+frame_0/texture = ExtResource("1_76cet")
 frame_0/duration = 0.1
-frame_1/texture = ExtResource("2_5bof0")
-frame_1/duration = 0.1
-frame_2/texture = ExtResource("3_uxn5u")
-frame_2/duration = 0.1
-frame_3/texture = ExtResource("4_jal8m")
-frame_3/duration = 0.1

@@ -1,9 +1,9 @@
 [gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://dpk4ieh6x02j2"]
 
-[ext_resource type="Texture2D" uid="uid://be6otw5bagadc" path="res://Assets/yesnoquestions/noanswersphotos/yesid11/Sprite-0002.png" id="1_gat6u"]
-[ext_resource type="Texture2D" uid="uid://vsxwwphdrgm7" path="res://Assets/yesnoquestions/noanswersphotos/yesid11/Sprite-0003.png" id="2_qwvy6"]
-[ext_resource type="Texture2D" uid="uid://bp55yfb6wyti1" path="res://Assets/yesnoquestions/noanswersphotos/yesid11/Sprite-0004.png" id="3_utivi"]
-[ext_resource type="Texture2D" uid="uid://cqft87mghuom8" path="res://Assets/yesnoquestions/noanswersphotos/yesid11/Sprite-0005.png" id="4_lu654"]
+[ext_resource type="Texture2D" uid="uid://0dxfhopwnsnc" path="res://Assets/yesnoquestions/noanswersphotos/11/Sprite-0002.png" id="1_gat6u"]
+[ext_resource type="Texture2D" uid="uid://cowvecl2otxht" path="res://Assets/yesnoquestions/noanswersphotos/11/Sprite-0003.png" id="2_qwvy6"]
+[ext_resource type="Texture2D" uid="uid://dhm2mx3ce060q" path="res://Assets/yesnoquestions/noanswersphotos/11/Sprite-0004.png" id="3_utivi"]
+[ext_resource type="Texture2D" uid="uid://iaamq3kvepn8" path="res://Assets/yesnoquestions/noanswersphotos/11/Sprite-0005.png" id="4_lu654"]
 
 [resource]
 frames = 4
