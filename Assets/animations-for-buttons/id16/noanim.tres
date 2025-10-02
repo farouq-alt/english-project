@@ -1,4 +1,7 @@
-[gd_resource type="AnimatedTexture" format=3 uid="uid://oy5pc8k5ot5k"]
+[gd_resource type="AnimatedTexture" load_steps=2 format=3 uid="uid://oy5pc8k5ot5k"]
+
+[ext_resource type="Texture2D" uid="uid://le0ywl7ou80i" path="res://Assets/yesnoquestions/noanswersphotos/fpp,small,lustre,wall_texture,product,750x1000.jpg" id="1_j8exb"]
 
 [resource]
+frame_0/texture = ExtResource("1_j8exb")
 frame_0/duration = 0.1
