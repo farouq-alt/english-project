@@ -1,17 +1,32 @@
-[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://cimsr4ymxjtfx"]
+[gd_resource type="AnimatedTexture" load_steps=10 format=3 uid="uid://cimsr4ymxjtfx"]
 
-[ext_resource type="Texture2D" uid="uid://6gvutaj823u8" path="res://Assets/yesnoquestions/noanswersphotos/yesid5/Sprite-0001.png" id="1_7motl"]
-[ext_resource type="Texture2D" uid="uid://dixglspt7yeqv" path="res://Assets/yesnoquestions/noanswersphotos/yesid5/Sprite-0002.png" id="2_jf0qb"]
-[ext_resource type="Texture2D" uid="uid://b6d56gjmx1m5j" path="res://Assets/yesnoquestions/noanswersphotos/yesid5/Sprite-0003.png" id="3_7byp0"]
-[ext_resource type="Texture2D" uid="uid://c2bnm2e03abxj" path="res://Assets/yesnoquestions/noanswersphotos/yesid5/Sprite-0004.png" id="4_g8hm7"]
+[ext_resource type="Texture2D" uid="uid://bmbgavfsayv2q" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0001.png" id="1_fljta"]
+[ext_resource type="Texture2D" uid="uid://nbb1em8o8r3n" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0002.png" id="2_ncjta"]
+[ext_resource type="Texture2D" uid="uid://diwnjasvjyx5h" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0003.png" id="3_mnqvb"]
+[ext_resource type="Texture2D" uid="uid://cx133jso2q4vx" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0004.png" id="4_sdyec"]
+[ext_resource type="Texture2D" uid="uid://dxn8y4bwjcytl" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0005.png" id="5_xriip"]
+[ext_resource type="Texture2D" uid="uid://cihax6kykwt1p" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0006.png" id="6_v8t47"]
+[ext_resource type="Texture2D" uid="uid://dctlgj1y0iutb" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0007.png" id="7_fm2m2"]
+[ext_resource type="Texture2D" uid="uid://dxpg3n8y04c44" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0008.png" id="8_axah7"]
+[ext_resource type="Texture2D" uid="uid://b1ncgvfwi1mhs" path="res://Assets/yesnoquestions/noanswersphotos/yesid9/Sprite-0009.png" id="9_5ft30"]
 
 [resource]
-frames = 4
-frame_0/texture = ExtResource("1_7motl")
+frames = 9
+frame_0/texture = ExtResource("1_fljta")
 frame_0/duration = 0.1
-frame_1/texture = ExtResource("2_jf0qb")
+frame_1/texture = ExtResource("2_ncjta")
 frame_1/duration = 0.1
-frame_2/texture = ExtResource("3_7byp0")
+frame_2/texture = ExtResource("3_mnqvb")
 frame_2/duration = 0.1
-frame_3/texture = ExtResource("4_g8hm7")
+frame_3/texture = ExtResource("4_sdyec")
 frame_3/duration = 0.1
+frame_4/texture = ExtResource("5_xriip")
+frame_4/duration = 0.1
+frame_5/texture = ExtResource("6_v8t47")
+frame_5/duration = 0.1
+frame_6/texture = ExtResource("7_fm2m2")
+frame_6/duration = 0.1
+frame_7/texture = ExtResource("8_axah7")
+frame_7/duration = 0.1
+frame_8/texture = ExtResource("9_5ft30")
+frame_8/duration = 0.1

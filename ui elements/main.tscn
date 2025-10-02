@@ -27,12 +27,9 @@ stretch_mode = 1
 
 [node name="mainfocus" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -218.0
-offset_right = 220.0
 grow_horizontal = 2
 grow_vertical = 2
 

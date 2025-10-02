@@ -116,7 +116,7 @@ func _ready() -> void:
 	 "image_no":"res://Assets/animations-for-buttons/id16/noanim.tres",  
 	 "stat":"stinkiness", "yes_value":4, "no_value":0},
 
-	{"id":17, "question":"Would you eat a smelly sardine sandwich in a crowded room?", 
+	{"id":17, "question":"Would you eat a sardine sandwich in a crowded room?", 
 	 "image_yes":"res://Assets/animations-for-buttons/id17/yesanim.tres", 
 	 "image_no":"res://Assets/animations-for-buttons/id17/noanim.tres", 
 	 "stat":"stinkiness", "yes_value":3, "no_value":0},

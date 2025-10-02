@@ -1,0 +1,17 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://cb06p2pdv5581"]
+
+[ext_resource type="Texture2D" uid="uid://bp0015dvodu7k" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0001.png" id="1_iow7m"]
+[ext_resource type="Texture2D" uid="uid://cee2e4rhvsmtg" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0002.png" id="2_0j5h7"]
+[ext_resource type="Texture2D" uid="uid://b2we55u3sbars" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0003.png" id="3_oyx6w"]
+[ext_resource type="Texture2D" uid="uid://bpmhop1yrhpd0" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0004.png" id="4_unrm0"]
+
+[resource]
+frames = 4
+frame_0/texture = ExtResource("1_iow7m")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("2_0j5h7")
+frame_1/duration = 0.1
+frame_2/texture = ExtResource("3_oyx6w")
+frame_2/duration = 0.1
+frame_3/texture = ExtResource("4_unrm0")
+frame_3/duration = 0.1
