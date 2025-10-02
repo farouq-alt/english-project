@@ -1,17 +1,18 @@
-[gd_scene load_steps=51 format=3 uid="uid://dryk7odxunit7"]
+[gd_scene load_steps=52 format=3 uid="uid://dryk7odxunit7"]
 
-[ext_resource type="Texture2D" uid="uid://ba72erv41w3m" path="res://Assets/Card/Cardt.png" id="1_kbwnf"]
 [ext_resource type="Script" uid="uid://57otohbndmvp" path="res://scripts/card.gd" id="1_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://bo1i3c5yu4ter" path="res://Assets/Buttons/arrow.png" id="2_8ej6a"]
-[ext_resource type="Texture2D" uid="uid://k52p1ha2i0v8" path="res://Assets/misc/frames/shapes-vintage-labels-png.webp" id="3_lpvhm"]
+[ext_resource type="Texture2D" uid="uid://wklwxta7xbv2" path="res://Assets/Card/frame.png" id="2_tgsa1"]
+[ext_resource type="Texture2D" uid="uid://bi1x11yewvhxd" path="res://Assets/misc/frames/noanswer.png" id="3_87xjf"]
 [ext_resource type="Texture2D" uid="uid://dabvt08emqbns" path="res://Assets/Buttons/New/arrow_hover.png" id="3_t4gn0"]
 [ext_resource type="Texture2D" uid="uid://3731tx3y47c4" path="res://Assets/Buttons/arrow 2.png" id="4_kbwnf"]
+[ext_resource type="Texture2D" uid="uid://b46vjydvd2yhw" path="res://Assets/misc/frames/yesanswer.png" id="4_yle5d"]
 [ext_resource type="Texture2D" uid="uid://xa3shbpjui50" path="res://Assets/Card/questionmark.png" id="5_kbwnf"]
 [ext_resource type="Texture2D" uid="uid://ces7mvcrjd444" path="res://Assets/Buttons/New/arrow_hover2.png" id="5_lpvhm"]
 [ext_resource type="Texture2D" uid="uid://bovc08t5oriv" path="res://Assets/skull gif/finalskullspritesheet.png" id="6_8ej6a"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vh880"]
-texture = ExtResource("1_kbwnf")
+texture = ExtResource("2_tgsa1")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t4gn0"]
 atlas = ExtResource("6_8ej6a")
@@ -304,8 +305,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 38.0
-offset_right = -40.0
+offset_left = 49.0
+offset_top = -11.0
+offset_right = -43.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -319,21 +321,54 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="caseimgholder" type="VBoxContainer" parent="Panel/cardframe"]
+[node name="VSeparator6" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-size_flags_vertical = 0
+size_flags_horizontal = 4
 
-[node name="frame" type="TextureRect" parent="Panel/cardframe/caseimgholder"]
+[node name="VSeparator7" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSeparator8" type="VSeparator" parent="Panel/cardframe"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="caseimgholder" type="HBoxContainer" parent="Panel/cardframe"]
+layout_mode = 2
+
+[node name="noframe" type="TextureRect" parent="Panel/cardframe/caseimgholder"]
 clip_children = 2
-custom_minimum_size = Vector2(5, 300)
+custom_minimum_size = Vector2(5, 314)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-texture = ExtResource("3_lpvhm")
+texture = ExtResource("3_87xjf")
 expand_mode = 3
 stretch_mode = 4
 
-[node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/frame"]
+[node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/noframe"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 19.0
+offset_right = 276.0
+offset_bottom = 281.0
+expand_mode = 3
+stretch_mode = 4
+
+[node name="yesframe" type="TextureRect" parent="Panel/cardframe/caseimgholder"]
+clip_children = 2
+custom_minimum_size = Vector2(59, 314)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("4_yle5d")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="image" type="TextureRect" parent="Panel/cardframe/caseimgholder/yesframe"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 19.0
@@ -364,7 +399,7 @@ autowrap_mode = 2
 layout_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/cardframe/casetextholder/Control"]
-position = Vector2(-179, 162)
+position = Vector2(-179, 153)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_mfuqh")
 animation = &"calm"
