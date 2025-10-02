@@ -1,15 +1,13 @@
-<<<<<<< Updated upstream
-extends Node2D
-=======
 # res://scripts/Card.gd
 extends Control
-class_name Card
+class_name myCard
 
 signal answered(choice: String, data: Dictionary)
 
 @onready var question_label := $Panel/cardframe/casetextholder/textholder/question
 @onready var sprite := $Panel/cardframe/casetextholder/Control/AnimatedSprite2D
-@onready var image_rect := $Panel/cardframe/caseimgholder/frame/image
+@onready var image_rect := $Panel/cardframe/caseimgholder/noframe/image
+@onready var image_rect2 := $Panel/cardframe/caseimgholder/yesframe/image
 @onready var lbutton := $Panel/cardframe2/buttoncontainer/lbutton
 @onready var rbutton := $Panel/cardframe2/buttoncontainer/rbutton
 
@@ -20,6 +18,8 @@ var typing_timer: Timer
 var full_text: String = ""
 var current_index: int = 0
 var current_data: Dictionary = {}
+
+
 
 func _ready() -> void:
 	# create typing timer
@@ -35,61 +35,34 @@ func _ready() -> void:
 
 	# clear initially
 	question_label.text = ""
-	# ensure image_rect has sensible stretch mode
-	if image_rect:
-		image_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 
 func set_question_data(data: Dictionary) -> void:
-	# called by Main to provide a question dict
 	current_data = data.duplicate(true)
 
-	# stop previous typing if any
-	if typing_timer and typing_timer.is_stopped() == false:
+	# reset text typing
+	if not typing_timer.is_stopped():
 		typing_timer.stop()
-
 	full_text = current_data.get("question", "")
 	current_index = 0
 	question_label.text = ""
 
-	# set image (support both "image" key and fallback "image_yes"/"image_no")
-	var tex = _resolve_image_from_data(current_data)
-	if tex:
-		image_rect.texture = tex
+	# load "no" image
+	var no_img = current_data.get("image_no", "")
+	if no_img != "" and ResourceLoader.exists(no_img):
+		image_rect.texture = load(no_img)
 		image_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	else:
-		# no image found - clear or leave existing
-		image_rect.texture = null
 
-	# start typewriter and sprite animation
+	# load "yes" image
+	var yes_img = current_data.get("image_yes", "")
+	if yes_img != "" and ResourceLoader.exists(yes_img):
+		image_rect2.texture = load(yes_img)
+		image_rect2.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+
+	# play sprite animation + start typing
 	if sprite:
 		sprite.play("calm")
 	typing_timer.start()
 
-func _resolve_image_from_data(data: Dictionary) -> Texture2D:
-	# Priority: "image" -> "image_yes" -> "image_no"
-	var candidate = null
-	if data.has("image") and str(data["image"]) != "":
-		candidate = data["image"]
-	elif data.has("image_yes") and str(data["image_yes"]) != "":
-		candidate = data["image_yes"]
-	elif data.has("image_no") and str(data["image_no"]) != "":
-		candidate = data["image_no"]
-
-	if candidate == null:
-		return null
-
-	# If candidate is a string path, load it; if it's already a Texture, return it
-	if typeof(candidate) == TYPE_STRING:
-		var loaded = load(candidate)
-		if loaded:
-			return loaded
-		else:
-			push_warning("Card: failed to load image path: %s" % candidate)
-			return null
-	# candidate might already be a resource
-	if typeof(candidate) == TYPE_OBJECT:
-		return candidate
-	return null
 
 func _on_typing_tick() -> void:
 	if current_index < full_text.length():
@@ -111,17 +84,10 @@ func _finish_typing() -> void:
 
 func _on_lbutton_pressed() -> void:
 	_finish_typing()
-	# (optional) show no-specific image if provided, but keep behavior minimal:
-	# var no_tex = _load_texture_safe(current_data.get("image_no", null))
-	# if no_tex: image_rect.texture = no_tex
 	emit_signal("answered", "no", current_data)
 	queue_free()
 
 func _on_rbutton_pressed() -> void:
 	_finish_typing()
-	# (optional) show yes-specific image if provided:
-	# var yes_tex = _load_texture_safe(current_data.get("image_yes", null))
-	# if yes_tex: image_rect.texture = yes_tex
 	emit_signal("answered", "yes", current_data)
 	queue_free()
->>>>>>> Stashed changes
