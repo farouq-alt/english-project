@@ -1,17 +1,20 @@
-[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://thvr6vtkwg5n"]
+[gd_resource type="AnimatedTexture" load_steps=6 format=3 uid="uid://thvr6vtkwg5n"]
 
-[ext_resource type="Texture2D" uid="uid://bp0015dvodu7k" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0001.png" id="1_fwtws"]
-[ext_resource type="Texture2D" uid="uid://cee2e4rhvsmtg" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0002.png" id="2_mcp5q"]
-[ext_resource type="Texture2D" uid="uid://b2we55u3sbars" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0003.png" id="3_cvlw0"]
-[ext_resource type="Texture2D" uid="uid://bpmhop1yrhpd0" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0004.png" id="4_j5gyn"]
+[ext_resource type="Texture2D" uid="uid://ba5b2urdebd6x" path="res://Assets/yesnoquestions/noanswersphotos/yesid15/Sprite-0010.png" id="1_mcp5q"]
+[ext_resource type="Texture2D" uid="uid://pqxk0d0gtfso" path="res://Assets/yesnoquestions/noanswersphotos/yesid15/Sprite-0011.png" id="2_cvlw0"]
+[ext_resource type="Texture2D" uid="uid://bbknj6matrwoa" path="res://Assets/yesnoquestions/noanswersphotos/yesid15/Sprite-0012.png" id="3_j5gyn"]
+[ext_resource type="Texture2D" uid="uid://djjvrxnnsqqpj" path="res://Assets/yesnoquestions/noanswersphotos/yesid15/Sprite-0013.png" id="4_w4hlh"]
+[ext_resource type="Texture2D" uid="uid://biiph1kg4085r" path="res://Assets/yesnoquestions/noanswersphotos/yesid15/Sprite-0014.png" id="5_dfwcq"]
 
 [resource]
-frames = 4
-frame_0/texture = ExtResource("1_fwtws")
+frames = 5
+frame_0/texture = ExtResource("1_mcp5q")
 frame_0/duration = 0.1
-frame_1/texture = ExtResource("2_mcp5q")
+frame_1/texture = ExtResource("2_cvlw0")
 frame_1/duration = 0.1
-frame_2/texture = ExtResource("3_cvlw0")
+frame_2/texture = ExtResource("3_j5gyn")
 frame_2/duration = 0.1
-frame_3/texture = ExtResource("4_j5gyn")
+frame_3/texture = ExtResource("4_w4hlh")
 frame_3/duration = 0.1
+frame_4/texture = ExtResource("5_dfwcq")
+frame_4/duration = 0.1

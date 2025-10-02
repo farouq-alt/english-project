@@ -1,17 +1,23 @@
-[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://c8fh5eotv2sqs"]
+[gd_resource type="AnimatedTexture" load_steps=7 format=3 uid="uid://c8fh5eotv2sqs"]
 
-[ext_resource type="Texture2D" uid="uid://bp0015dvodu7k" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0001.png" id="1_1ywsu"]
-[ext_resource type="Texture2D" uid="uid://cee2e4rhvsmtg" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0002.png" id="2_mtq0c"]
-[ext_resource type="Texture2D" uid="uid://b2we55u3sbars" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0003.png" id="3_23bvo"]
-[ext_resource type="Texture2D" uid="uid://bpmhop1yrhpd0" path="res://Assets/yesnoquestions/noanswersphotos/yesid10/Sprite-0004.png" id="4_3own7"]
+[ext_resource type="Texture2D" uid="uid://bvt0mdnb2s14w" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0013.png" id="1_23bvo"]
+[ext_resource type="Texture2D" uid="uid://cow2ahcb2ycs6" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0014.png" id="2_3own7"]
+[ext_resource type="Texture2D" uid="uid://ce34ueg6aujtc" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0015.png" id="3_yqpwv"]
+[ext_resource type="Texture2D" uid="uid://cyqhcnu3l57jq" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0016.png" id="4_mids3"]
+[ext_resource type="Texture2D" uid="uid://vmxl5bt5dj6a" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0017.png" id="5_lcuki"]
+[ext_resource type="Texture2D" uid="uid://c4v0gasy2dqoo" path="res://Assets/yesnoquestions/noanswersphotos/yesid16/Sprite-0018.png" id="6_8rpl7"]
 
 [resource]
-frames = 4
-frame_0/texture = ExtResource("1_1ywsu")
+frames = 6
+frame_0/texture = ExtResource("1_23bvo")
 frame_0/duration = 0.1
-frame_1/texture = ExtResource("2_mtq0c")
+frame_1/texture = ExtResource("2_3own7")
 frame_1/duration = 0.1
-frame_2/texture = ExtResource("3_23bvo")
+frame_2/texture = ExtResource("3_yqpwv")
 frame_2/duration = 0.1
-frame_3/texture = ExtResource("4_3own7")
+frame_3/texture = ExtResource("4_mids3")
 frame_3/duration = 0.1
+frame_4/texture = ExtResource("5_lcuki")
+frame_4/duration = 0.1
+frame_5/texture = ExtResource("6_8rpl7")
+frame_5/duration = 0.1
