@@ -1,7 +1,4 @@
-[gd_resource type="AnimatedTexture" load_steps=2 format=3 uid="uid://uwt2cwvmia6w"]
-
-[ext_resource type="Texture2D" uid="uid://df80qu3dhkoyk" path="res://Assets/yesnoquestions/noanswersphotos/noid10/Sprite-0002.png" id="1_5q2ll"]
+[gd_resource type="AnimatedTexture" format=3 uid="uid://uwt2cwvmia6w"]
 
 [resource]
-frame_0/texture = ExtResource("1_5q2ll")
 frame_0/duration = 0.5
